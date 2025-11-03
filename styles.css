@@ -1,0 +1,146 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif; 
+  margin: 10px;
+  padding: 50px;
+  background-color:#f0f0f0
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4b8adc;
+  padding: 50px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+}
+
+/* Section Layout */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Home Section Color */
+#home {
+  color: rgb(30, 16, 232);
+}
+
+/* Home Image – Full Width */
+.home-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  color: rgb(116, 18, 77);
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00cc7a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Product Grid using Flexbox */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.09);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact Section using Flexbox */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+#contact h2 {
+  color: #4f7a3f;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+/* About Section Box with Flexbox */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+#about h2 {
+  color: #4f7a3f;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1em;
+  margin: 5px 0;
+  line-height: 1.6;
+}

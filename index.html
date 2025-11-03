@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- SIGNUP SECTION -->
+  <div id="signup-section" class="form-container" style="display: none;">
+    <h2>Create Account</h2>
+    <input type="text" id="signup-username" placeholder="Username" required />
+    <input type="password" id="signup-password" placeholder="Password" required />
+    <button onclick="signUp()">Sign Up</button>
+    <p>Already have an account? <a href="#" onclick="showSection('login')">Login</a></p>
+  </div>
+
+  <!-- LOGIN SECTION -->
+  <div id="login-section" class="form-container">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username" required />
+    <input type="password" id="login-password" placeholder="Password" required />
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <a href="#" onclick="showSection('signup')">Sign up</a></p>
+  </div>
+
+  <!-- STORE SECTION (NAVBAR + PAGES) -->
+  <div id="store-section" style="display: none;">
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+      <h1>Welcome to My Store: <span id="user-name"></span> 👋</h1>
+      <img src="image.17.webp" alt="Snap Shop Heaven" class="home-image" />
+      <p>Discover a world of top-quality electronics, fashion, and daily essentials. At My E-Commerce Store, we bring you the best deals and trending products from trusted brands — all in one place. Shop smart, shop easy, and enjoy a seamless online shopping experience.</p>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="section">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+
+        <!-- Product cards -->
+        <div class="product-card">
+          <a href="https://amzn.to/4mSDwiX" target="_blank">
+            <img src="image.3.jpg" alt="Product 1" />
+            <p>Gaming PC, Prebuilt Desktop with Intel 12th Core i5-12400F & GeForce RTX3050, 32G DDR4 RAM, 1TB NVME SSD</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4mVFgbn" target="_blank">
+            <img src="image.4.jpg" alt="Product 2" />
+            <p>CyberPowerPC Gamer Xtreme VR Gaming PC - i5-13400F, RTX 4060, 16GB DDR5, 1TB PCIe SSD</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4kZVWge" target="_blank">
+            <img src="image.5.jpg" alt="Product 3" />
+            <p>Corsair Vengeance i8200 Gaming PC – i9 14900KF, RTX 5080, 64GB DDR5</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/3Tf0143" target="_blank">
+            <img src="image.6.jpg" alt="Product 4" />
+            <p>Cooler Power LUXEBYTE Gaming PC White - Ryzen 5 7600X, RTX 4060, 32GB DDR5</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/3HBGLeB" target="_blank">
+            <img src="iamge.7.jpg" alt="Speaker" />
+            <p>Bluetooth Speaker - HD Sound, Waterproof, 20H Playtime</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4jKg1pA" target="_blank">
+            <img src="image.7.jpg" alt="Motherboard" />
+            <p>Asus ROG Strix B550-F Gaming WiFi II - AMD AM4, PCIe 4.0, RGB</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4krCIQC" target="_blank">
+            <img src="image.8.jpg" alt="Brushes" />
+            <p>BS-MALL Makeup Brush Set 18 Pcs Premium Synthetic Foundation Set</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4mSSDsQ" target="_blank">
+            <img src="image.9.jpg" alt="Water Bottle" />
+            <p>RAYMYLO Insulated Water Bottle 40 oz - Leak Proof, BPA-Free</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://i.ebayimg.com/images/g/PfkAAOSw8xdoQNxp/s-l1600.webp" target="_blank">
+            <img src="image.10.webp" alt="Jewelry" />
+            <p>1lb Vintage to Modern Costume Jewelry Lot</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/45grRV5" target="_blank">
+            <img src="image.11.jpg" alt="Ring" />
+            <p>Moissanite Wedding Band - 925 Sterling Silver, 18K White Gold Plated</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/3FHJKle" target="_blank">
+            <img src="image.12.jpg" alt="Watch" />
+            <p>Casio AE1200WH Men’s Digital Watch - 10 Year Battery, World Time</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/3HADzjq" target="_blank">
+            <img src="image.13.jpg" alt="OLEVS Watch" />
+            <p>OLEVS Men's Waterproof Stainless Steel Analog Watch</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4e1ByZW" target="_blank">
+            <img src="image.14.jpg" alt="Smart TV" />
+            <p>VIZIO 40-inch Smart TV - FHD 1080p, DTS Virtual:X, Alexa Compatible</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4kZObXz" target="_blank">
+            <img src="image.15.jpg" alt="TCL TV" />
+            <p>TCL 32-Inch LED Smart TV (2023 Model) - Roku TV, Alexa & Google Support</p>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/3FRHqIg" target="_blank">
+            <img src="image.16.jpg" alt="Women's Blazer" />
+            <p>Women's 3/4 Sleeve Lightweight Work Office Blazer Jacket</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>My E-Commerce Store is dedicated to offering premium products with unbeatable value. From cutting-edge tech to stylish wearables, our curated collection ensures quality, affordability, and customer satisfaction. We're passionate about making online shopping safe, easy, and enjoyable for everyone.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Have questions or need help? Reach out to our friendly support team via email or phone. We’re here to assist you with any inquiries, feedback, or order-related concerns.</p>
+      <p><strong>Email:</strong> hamzadevelopers35@gmail.com</p>
+      <p><strong>Phone:</strong> +92 309 4844417</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
